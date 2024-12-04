@@ -1,0 +1,72 @@
+<DOCTYPE html>
+<html>
+
+<body>
+<body style="background-color:steelblue;">
+
+<style>
+
+body{
+     text-align: center;
+     background-image: url('ball.png');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+}
+
+button {
+  position: relative;
+  z-index: 1;
+  background: purple;
+  padding: 50px;
+  /* ... */
+}
+
+button:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 1;
+  box-shadow: 0 0 1em 0.5em var(--purple-300);
+}
+
+#boks {
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+        position: relative;
+        animation-name: frem-og-tilbake;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes frem-og-tilbake {
+        0% {
+            left: 0px;
+        }
+        100% {
+            left: 1000px;
+        }
+    }
+</style>
+
+
+<div id="boks"></div>
+
+
+<button onclick="window.location.href = 'Side3.html';"> Hjem </button>
+
+
+<h1 style="background-color:powderblue;font-family:verdana;color:red;border:3px solid Violet;text-align:center;font-size:500%;"> HEI </h1>
+
+<li style="background-color:powderblue;font-family:verdana;color:blue;border:3px solid Violet;text-align:center;font-size:200%;"> Jeg liker sjokolade </li>
+
+<img src="ball.png" alt="fotball" width="200px" height="200px">
+
+
+<h1>  haaaaaaaaaaaaaaaaaaaallaaa </h1>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/G8nNGk6LHaM?si=8ensCzfALauoe24s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
